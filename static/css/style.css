@@ -18,7 +18,7 @@ body{
 }
 
 .form{
-    background: linear-gradient(#00545d50, #00072950);
+    background: linear-gradient(#00545d90, #00072990);
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
     outline:none;
@@ -60,4 +60,51 @@ body{
     font-size: 80px;
     margin-bottom: -40px;
     color: white;
+}
+@media (max-width:600px) {
+    
+    .form{
+        background: linear-gradient(#00545d90, #00072990);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px black;
+        outline:none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 250px;
+        height: 45%;
+        margin: auto;
+        /* position: relative;
+        top: 100px;
+        left: 35%; */
+    }
+
+
+    .text{
+        font-size: 60px;
+        margin-bottom: -40px;
+        color: white;
+    }
+    .box{
+        width: 150px;
+        height: 40px;
+        margin: 10px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+
+    }
+    .box::placeholder{
+        color: white;
+        font-size: 10px;
+    }
+    .button{
+        width: 70px;
+        margin-top: 20px;
+        height: 35px;
+        background-color: #ffffff20;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
 }
