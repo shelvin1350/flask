@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
     <title>Document</title>
+
 </head>
 <body>
-    <form action="/register" method="POST">
-        <input type="text" placeholder="Enter your username" name="user" id="">
-        <input type="password" placeholder="Enter your password" name="pswd" id="">
-        <input type="submit" value="Login">
-    </form>
+    <div class="hero">
+            <form action="/register" method="POST" class = "form">
+                <input type="text" class="box" placeholder="Enter your username" name="user" id="">
+                <input type="password" class="box" placeholder="Enter your password" name="pswd" id="">
+                <input type="submit" class="button" value="Login">
+            </form>
+    </div>
 </body>
 </html>
